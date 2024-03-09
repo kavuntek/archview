@@ -1,0 +1,95 @@
+div.logobar {
+    padding: 10px 15px;
+    background-color: rgb(248, 248, 248);
+    color: #777777;
+    background-image: url("../images/13.2.jpg");
+    background-image:rect(0, 100px, 200px, 0);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /*width: 600px;*/
+    box-sizing: border-box;
+    /*height is changed to a relative one. Older: height: 250px;*/
+    height: 100%;
+    border-bottom: none;
+    position: relative;
+    background-position: center ;
+    background-size: cover;
+
+
+    animation: rotateBackgrounds 200s infinite;
+    /*background-position: 50% 50%;*/
+
+}
+
+@keyframes rotateBackgrounds {
+  0% {
+    background-image: url('../images/13.2.jpg'), url('../images/12.jpg');
+  }
+  35%{
+    background-image: url('../images/12.jpg'), url('../images/10.jpg');
+  }
+  70%{
+    background-image: url('../images/10.jpg'), url('../images/13.2.jpg');
+  }
+
+}
+
+.logobar .container{
+	border-bottom: none;
+}
+.logobar a {
+    color: #4e5e6b;
+}
+.navbar{
+  border-top: none !important;
+}
+.navbar-brand {
+  font-size: 64pt; 
+  /*tarihi değiştiriyor*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  color: white! important;
+  text-shadow: 0 0 3px black;
+  display: block;
+  float: none;
+  padding: 0;
+  height: auto;
+  line-height: 120%;
+  letter-spacing: 4px;
+ 
+}
+.navbar{
+  border-radius: 0px !important;
+}
+
+.place {
+  float: left;
+ 
+  display: block;
+  font-size: 30pt;
+  /*yeditepe ist turkiyeyi değiştiriyor*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  color: white !important;
+  text-shadow: 0 0 3px black;
+  text-decoration:none
+
+}
+
+.place a:before {
+
+  content: "Yeditepe University, ";
+  color: white !important;
+  text-decoration:none
+  
+}
+.place a{
+  color: white !important;
+  text-decoration:none;
+  display: block;
+}
+.place2 {
+  float: right;
+  padding : 23px 0 0 0px
+}
+
